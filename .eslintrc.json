@@ -28,7 +28,7 @@
 		"no-empty-character-class": "error",
 		"no-ex-assign": 0,
 		"no-extra-boolean-cast": 0,
-		"no-extra-parens": ["warn", "all", { "nestedBinaryExpressions": false }],
+		"no-extra-parens": 0,
 		"no-extra-semi": "error",
 		"no-func-assign": 0,
 		"no-inner-declarations": 0,
@@ -287,10 +287,25 @@
 		"@typescript-eslint/interface-name-prefix": 0,
 		"@typescript-eslint/member-ordering": ["error", {
 			"default": [
+				"public-instance-field",
+				"protected-instance-field",
+				"private-instance-field",
 				"instance-field",
+				"public-constructor",
+				"protected-constructor",
+				"private-constructor",
 				"constructor",
+				"public-instance-method",
+				"protected-instance-method",
+				"private-instance-method",
 				"instance-method",
+				"public-static-field",
+				"protected-static-field",
+				"private-static-field",
 				"static-field",
+				"public-static-method",
+				"protected-static-method",
+				"private-static-method",
 				"static-method"
 			]
 		}],
@@ -319,7 +334,8 @@
 				"requireLast": false
 			}
 		}],
-		"@typescript-eslint/explicit-function-return-type": ["warn", { "allowExpressions": true }],
+		"@typescript-eslint/no-extra-parens": 0,
+		"@typescript-eslint/explicit-function-return-type": 0,
 		"@typescript-eslint/semi": "error"
 	}
 }
