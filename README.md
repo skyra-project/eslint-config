@@ -8,12 +8,6 @@
 		<a href="https://www.npmjs.com/package/eslint-config-bamboo">
 			<img src="https://img.shields.io/npm/dt/eslint-config-bamboo.svg?maxAge=3600" alt="NPM downloads" />
 		</a>
-		<a href="https://dev.azure.com/kyranet/kyranet.public/_build/latest?definitionId=1&branchName=master">
-			<img src="https://dev.azure.com/kyranet/kyranet.public/_apis/build/status/kyranet.eslint-config-bamboo?branchName=master" alt="Build status" />
-		</a>
-		<a href="https://lgtm.com/projects/g/kyranet/eslint-config-bamboo/alerts/">
-			<img src="https://img.shields.io/lgtm/alerts/g/kyranet/eslint-config-bamboo.svg?logo=lgtm&logoWidth=18" alt="Total alerts">
-		</a>
 		<a href="https://dependabot.com">
 			<img src="https://api.dependabot.com/badges/status?host=github&repo=kyranet/eslint-config-bamboo" alt="Dependabot Status">
 		</a>
