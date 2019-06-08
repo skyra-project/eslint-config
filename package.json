@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-bamboo",
+  "description": "TypeScript ESLint shareable config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Antonio Román <kyradiscord@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/kyranet/eslint-config-bamboo/issues"
+  },
+  "homepage": "https://github.com/kyranet/eslint-config-bamboo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyranet/eslint-config-bamboo"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "typescript": "^3.5.1"
+  },
+  "keywords": [
+    "typescript",
+    "shareable",
+    "eslint",
+    "eslintconfig",
+    "lint"
+  ]
+}

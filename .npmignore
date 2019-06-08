@@ -1,0 +1,13 @@
+# Modules
+node_modules/
+
+# Git
+.github/
+.gitignore
+
+# Misc
+*.log
+
+# Lockfiles
+package-lock.json
+yarn.lock
