@@ -52,6 +52,18 @@ Or to `eslintrc.js` or `eslintrc.json`:
 }
 ```
 
+Also, you can use `eslint-config-bamboo`'s
+[`tsconfig.json`](https://github.com/kyranet/eslint-config-bamboo/blob/master/tsconfig.json) by extending it in yours:
+
+```json
+{
+	"extends": "eslint-config-bamboo"
+}
+```
+
+All of its properties are defaulted for bleeding-edge TypeScript options, you may extend this to include your own
+configuration options as well.
+
 ## Contributing
 
 1. Fork it!
