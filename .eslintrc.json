@@ -252,7 +252,7 @@
 		"no-restricted-imports": 0,
 		"no-this-before-super": "error",
 		"no-useless-computed-key": "error",
-		"no-useless-constructor": "error",
+		"no-useless-constructor": 0,
 		"no-useless-rename": "error",
 		"no-var": "error",
 		"object-shorthand": ["error", "always"],
