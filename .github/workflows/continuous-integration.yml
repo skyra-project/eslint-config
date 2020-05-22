@@ -1,0 +1,69 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'src/**'
+      - '.github/workflows/**'
+      - 'package.json'
+      - 'yarn.lock'
+      - 'tsconfig.json'
+  pull_request:
+
+jobs:
+  Build:
+    name: TypeScript compile
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Install NodeJS v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies
+        run: yarn --ignore-scripts --frozen-lockfile
+      - name: Compile TypeScript
+        uses: icrawl/action-tsc@v1
+        with:
+          build: src
+      - name: Upload Build bundle to artifacts
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: build_bundle
+          path: dist/
+
+  Lint:
+    name: Linting
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    needs: Build
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Install NodeJS v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies
+        run: yarn --ignore-scripts --frozen-lockfile
+      - name: Download build bundle artifact
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: build_bundle
+          path: dist/
+      - name: Run ESLint
+        uses: icrawl/action-eslint@v1
