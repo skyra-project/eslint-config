@@ -1,4 +1,4 @@
-# eslint-config-bamboo :bamboo:
+# eslint-config-bamboo 🎋
 
 <div align="center">
 	<p>
@@ -11,7 +11,7 @@
 		<a href="https://dependabot.com">
 			<img src="https://api.dependabot.com/badges/status?host=github&repo=kyranet/eslint-config-bamboo" alt="Dependabot Status">
 		</a>
-		<a href="https://www.patreon.com/kyranet">
+		<a href="https://donate.skyra.pw/patreon">
 			<img src="https://img.shields.io/badge/donate-patreon-F96854.svg" alt="Patreon" />
 		</a>
 	</p>
@@ -31,6 +31,8 @@ $ yarn add -D eslint-config-bamboo
 ```
 
 ## Usage
+
+### ESLint config
 
 Add the ESLint config to your `package.json`:
 
@@ -52,8 +54,19 @@ Or to `eslintrc.js` or `eslintrc.json`:
 }
 ```
 
-Also, you can use `eslint-config-bamboo`'s
-[`tsconfig.json`](https://github.com/kyranet/eslint-config-bamboo/blob/master/tsconfig.json) by extending it in yours:
+Create `tsconfig.eslint.json` next to the eslint config file, for example with content:
+
+```json
+{
+	"extends": "./tsconfig.json",
+	"include": ["src", "test"]
+}
+```
+
+### TypeScript config
+
+You can use `eslint-config-bamboo`'s
+[`tsconfig.json`](/tsconfig.json) by extending it in yours:
 
 ```json
 {
@@ -75,7 +88,7 @@ configuration options as well.
 ## Author
 
 **eslint-config-bamboo** © [kyranet](https://github.com/kyranet), released under the
-[MIT](https://github.com/kyranet/eslint-config-bamboo/blob/master/LICENSE) License.
+[MIT](/LICENSE.md) License.
 Authored and maintained by kyranet.
 
 > Github [kyranet](https://github.com/kyranet) - Twitter [@kyranet_](https://twitter.com/kyranet_)
