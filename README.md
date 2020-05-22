@@ -36,10 +36,10 @@ $ yarn add -D eslint-config-bamboo
 
 Add the ESLint config to your `package.json`:
 
-```json
+```jsonc
 {
 	"name": "my-project",
-	...
+	// ...
 	"eslintConfig": {
 		"extends": "bamboo"
 	}
