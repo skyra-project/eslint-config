@@ -1,36 +1,58 @@
-# eslint-config-bamboo 🎋
-
 <div align="center">
-	<p>
-		<a href="https://www.npmjs.com/package/eslint-config-bamboo">
-			<img src="https://img.shields.io/npm/v/eslint-config-bamboo.svg?maxAge=3600" alt="NPM version" />
-		</a>
-		<a href="https://www.npmjs.com/package/eslint-config-bamboo">
-			<img src="https://img.shields.io/npm/dt/eslint-config-bamboo.svg?maxAge=3600" alt="NPM downloads" />
-		</a>
-		<a href="https://dependabot.com">
-			<img src="https://api.dependabot.com/badges/status?host=github&repo=kyranet/eslint-config-bamboo" alt="Dependabot Status">
-		</a>
-		<a href="https://donate.skyra.pw/patreon">
-			<img src="https://img.shields.io/badge/donate-patreon-F96854.svg" alt="Patreon" />
-		</a>
-	</p>
-	<p>
-		<a href="https://nodei.co/npm/eslint-config-bamboo/"><img src="https://nodei.co/npm/eslint-config-bamboo.png?downloads=true&stars=true" alt="npm install info" /></a>
-	</p>
+  <p>
+<h1> @skyra/eslint-config </h1>
+<h3> Shareable ESLint config for <a href="https://github.com/skyra-project/skyra">Skyra<a> projects</h3>
+<p> Previously known as eslint-config-bamboo 🎋
+  </p>
+
 </div>
 
-## Install
+---
 
-```bash
-# Install Dependencies
-$ yarn add -D eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+**Table of Contents**
 
-# Install eslint-config-bamboo
-$ yarn add -D eslint-config-bamboo
+- [Installation](#installation)
+- [Usage](#usage)
+- [Meta](#meta)
+  * [License](#license)
+  * [Buy us some doughnuts](#buy-us-some-doughnuts)
+
+---
+
+**Status**
+
+[![GitHub](https://img.shields.io/github/license/skyra-project/saelem?logo=github&style=flat-square)](https://github.com/skyra-project/saelem/blob/master/LICENSE.md)
+[![npm](https://img.shields.io/npm/v/@skyra/eslint-config?color=crimson&label=eslint-config%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@skyra/eslint-config)
+[![npm](https://img.shields.io/npm/dt/@skyra/eslint-config?color=crimson&label=eslint-config%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@skyra/eslint-config)
+
+**Bundle Sizes**
+
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@skyra/eslint-config?label=eslint-config%20-%20minified&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@skyra/eslint-config)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@skyra/eslint-config?label=eslint-config%20-%20minzipped&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@skyra/eslint-config)
+
+**Social Media and Donations**
+
+[![Join Discord server](https://img.shields.io/discord/512303595966824458?color=697EC4&label=Join%20Discord%20Server&logo=discord&logoColor=FDFEFE&style=flat-square)](https://join.skyra.pw)
+[![Twitter Follow](https://img.shields.io/twitter/follow/favna_?label=Follow%20@Favna_&logo=twitter&colorB=1DA1F2&style=flat-square)](https://twitter.com/Favna_/follow)
+[![Twitter Follow](https://img.shields.io/twitter/follow/kyranet_?label=Follow%20@kyranet_&logo=twitter&colorB=1DA1F2&style=flat-square)](https://twitter.com/kyranet_/follow)
+[![Patreon Donate](https://img.shields.io/badge/patreon-donate-brightgreen.svg?label=Donate%20with%20Patreon&logo=patreon&colorB=F96854&style=flat-square&link=https://donate.skyra.pw/patreon)](https://donate.skyra.pw/patreon)
+[![PayPal Donate](https://img.shields.io/badge/paypal-donate-brightgreen.svg?label=Donate%20with%20Paypal&logo=paypal&colorB=00457C&style=flat-square&link=https://donate.skyra.pw/paypal)](https://donate.skyra.pw/paypal)
+
+# Installation
+
+**First install the Peer Dependencies**
+```sh
+yarn add -D eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
-## Usage
+**Then install `@skyra/eslint-config`**
+```sh
+yarn add -D @skyra/eslint-config
+```
+
+---
+
+# Usage
 
 ### ESLint config
 
@@ -41,7 +63,7 @@ Add the ESLint config to your `package.json`:
 	"name": "my-project",
 	// ...
 	"eslintConfig": {
-		"extends": "bamboo"
+		"extends": "@skyra"
 	}
 }
 ```
@@ -50,7 +72,7 @@ Or to `eslintrc.js` or `eslintrc.json`:
 
 ```json
 {
-	"extends": "bamboo"
+	"extends": "@skyra"
 }
 ```
 
@@ -65,17 +87,24 @@ Create `tsconfig.eslint.json` next to the eslint config file, for example with c
 
 ### TypeScript config
 
-You can use `eslint-config-bamboo`'s
+You can use `@skyra/eslint-config`'s
 [`tsconfig.json`](/tsconfig.json) by extending it in yours:
 
 ```json
 {
-	"extends": "eslint-config-bamboo"
+	"extends": "@skyra/eslint-config"
 }
 ```
 
 All of its properties are defaulted for bleeding-edge TypeScript options, you may extend this to include your own
 configuration options as well.
+
+# Meta
+
+## License
+
+Copyright © 2020, [Skyra Project](https://github.com/skyra-project).
+Released under the [MIT License](LICENSE.md).
 
 ## Contributing
 
@@ -85,10 +114,45 @@ configuration options as well.
 1. Push to the branch: `git push origin my-new-feature`
 1. Submit a pull request!
 
-## Author
+## Buy us some doughnuts
 
-**eslint-config-bamboo** © [kyranet](https://github.com/kyranet), released under the
-[MIT](/LICENSE.md) License.
-Authored and maintained by kyranet.
+Skyra Project is open source and always will be, even if we don't get donations. That said, we know there are amazing people who
+may still want to donate just to show their appreciation. Thanks you very much in advance!
 
-> Github [kyranet](https://github.com/kyranet) - Twitter [@kyranet_](https://twitter.com/kyranet_)
+We accept donations through Patreon, BitCoin, Ethereum, and Litecoin. You can use the buttoms below to donate through your method of choice.
+
+| Donate With |         QR         |                                                                  Address                                                                  |
+| :---------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
+|   Patreon   | ![PatreonImage][]  |                                               [Click Here](https://www.patreon.com/kyranet)                                               |
+|   PayPal    | ![PayPalImage][]   |                [Click Here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CET28NRZTDQ8L)                |
+|   BitCoin   | ![BitcoinImage][]  |         [3JNzCHMTFtxYFWBnVtDM9Tt34zFbKvdwco](bitcoin:3JNzCHMTFtxYFWBnVtDM9Tt34zFbKvdwco?amount=0.01&label=Skyra%20Discord%20Bot)          |
+|  Ethereum   | ![EthereumImage][] | [0xcB5EDB76Bc9E389514F905D9680589004C00190c](ethereum:0xcB5EDB76Bc9E389514F905D9680589004C00190c?amount=0.01&label=Skyra%20Discord%20Bot) |
+|  Litecoin   | ![LitecoinImage][] |         [MNVT1keYGMfGp7vWmcYjCS8ntU8LNvjnqM](litecoin:MNVT1keYGMfGp7vWmcYjCS8ntU8LNvjnqM?amount=0.01&label=Skyra%20Discord%20Bot)         |
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/kyranet"><img src="https://avatars0.githubusercontent.com/u/24852502?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Antonio Román</b></sub></a><br /><a href="https://github.com/skyra-project/eslint-config/commits?author=kyranet" title="Code">💻</a> <a href="#ideas-kyranet" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-kyranet" title="Project Management">📆</a> <a href="https://github.com/skyra-project/eslint-config/commits?author=kyranet" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://favware.tech/"><img src="https://avatars3.githubusercontent.com/u/4019718?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jeroen Claassens</b></sub></a><br /><a href="https://github.com/skyra-project/eslint-config/commits?author=Favna" title="Code">💻</a> <a href="#ideas-Favna" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-Favna" title="Project Management">📆</a> <a href="https://github.com/skyra-project/eslint-config/commits?author=Favna" title="Tests">⚠️</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+<!----------------- LINKS --------------->
+
+[patreonimage]:                      https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/patreon.png
+[paypalimage]:                       https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/paypal.png
+[bitcoinimage]:                      https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/bitcoin.png
+[ethereumimage]:                     https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/ethereum.png
+[litecoinimage]:                     https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/litecoin.png
