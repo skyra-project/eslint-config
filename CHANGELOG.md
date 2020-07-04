@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.2.1](https://github.com/skyra-project/eslint-config/compare/v5.2.0...v5.2.1) (2020-07-04)
+
+
+### Bug Fixes
+
+* **docs:** fixed badge labels ([a8dc932](https://github.com/skyra-project/eslint-config/commit/a8dc9326b490ce52db77f48de0b0e4afe2030df3))
+
 ## [5.2.0](https://github.com/skyra-project/eslint-config/compare/v3.0.0...v5.2.0) (2020-07-04)
 
 
