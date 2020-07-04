@@ -13,9 +13,13 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
+    + [ESLint config](#eslint-config)
+    + [TypeScript config](#typescript-config)
 - [Meta](#meta)
   * [License](#license)
+  * [Contributing](#contributing)
   * [Buy us some doughnuts](#buy-us-some-doughnuts)
+  * [Contributors ✨](#contributors-✨)
 
 ---
 
