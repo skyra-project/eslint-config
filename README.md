@@ -26,13 +26,13 @@
 **Status**
 
 [![GitHub](https://img.shields.io/github/license/skyra-project/saelem?logo=github&style=flat-square)](https://github.com/skyra-project/saelem/blob/master/LICENSE.md)
-[![npm](https://img.shields.io/npm/v/@skyra/eslint-config?color=crimson&label=eslint-config%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@skyra/eslint-config)
-[![npm](https://img.shields.io/npm/dt/@skyra/eslint-config?color=crimson&label=eslint-config%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@skyra/eslint-config)
+[![npm](https://img.shields.io/npm/v/@skyra/eslint-config?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@skyra/eslint-config)
+[![npm](https://img.shields.io/npm/dt/@skyra/eslint-config?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@skyra/eslint-config)
 
 **Bundle Sizes**
 
-[![npm bundle size](https://img.shields.io/bundlephobia/min/@skyra/eslint-config?label=eslint-config%20-%20minified&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@skyra/eslint-config)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@skyra/eslint-config?label=eslint-config%20-%20minzipped&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@skyra/eslint-config)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@skyra/eslint-config?logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@skyra/eslint-config)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@skyra/eslint-config?logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@skyra/eslint-config)
 
 **Social Media and Donations**
 
