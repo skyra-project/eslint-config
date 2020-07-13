@@ -33,7 +33,7 @@
     "eslint": "^7.4.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "standard-version": "^8.0.0",
+    "standard-version": "^8.0.1",
     "typescript": "^3.9.6"
   },
   "files": [
