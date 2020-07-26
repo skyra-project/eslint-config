@@ -25,7 +25,7 @@
 
 **Status**
 
-[![GitHub](https://img.shields.io/github/license/skyra-project/saelem?logo=github&style=flat-square)](https://github.com/skyra-project/saelem/blob/master/LICENSE.md)
+[![GitHub](https://img.shields.io/github/license/skyra-project/eslint-config?logo=github&style=flat-square)](https://github.com/skyra-project/eslint-config/blob/main/LICENSE.md)
 [![npm](https://img.shields.io/npm/v/@skyra/eslint-config?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@skyra/eslint-config)
 [![npm](https://img.shields.io/npm/dt/@skyra/eslint-config?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@skyra/eslint-config)
 
@@ -155,8 +155,8 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 <!----------------- LINKS --------------->
 
-[patreonimage]:                      https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/patreon.png
-[paypalimage]:                       https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/paypal.png
-[bitcoinimage]:                      https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/bitcoin.png
-[ethereumimage]:                     https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/ethereum.png
-[litecoinimage]:                     https://raw.githubusercontent.com/skyra-project/Skyra/master/assets/github/litecoin.png
+[patreonimage]:                      https://cdn.skyra.pw/gh-assets/patreon.png
+[paypalimage]:                       https://cdn.skyra.pw/gh-assets/paypal.png
+[bitcoinimage]:                      https://cdn.skyra.pw/gh-assets/bitcoin.png
+[ethereumimage]:                     https://cdn.skyra.pw/gh-assets/ethereum.png
+[litecoinimage]:                     https://cdn.skyra.pw/gh-assets/litecoin.png
