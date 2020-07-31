@@ -88,6 +88,7 @@
     "access": "public"
   },
   "resolutions": {
-    "lodash": "^4.17.9"
+    "lodash": "^4.17.9",
+		"dot-prop": "^5.2.0"
   }
 }
