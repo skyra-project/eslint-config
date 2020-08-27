@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.3.1](https://github.com/skyra-project/eslint-config/compare/v5.3.0...v5.3.1) (2020-08-27)
+
+
+### Bug Fixes
+
+* bump dev & peer dependencies ([b2cf951](https://github.com/skyra-project/eslint-config/commit/b2cf9513c391c0d3f5fdc7ba3f751d66d2ba4f65))
+
 ## [5.3.0](https://github.com/skyra-project/eslint-config/compare/v5.2.1...v5.3.0) (2020-07-26)
 
 
