@@ -1,27 +1,32 @@
-# Dependencies
+# Ignore a blackhole and the folder for development
 node_modules/
+.vs/
+.idea/
+*.iml
+coverage/
+docs/
 
-# Misc
-.DS_Store
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Ignore tsc dist folder
+dist/
 
-# Bad NPM is bad
+# Ignore JavaScript files
+**/*.js
+**/*.mjs
+**/*.js.map
+**/*.d.ts
+!src/**/*.d.ts
+**/*.tsbuildinfo
+!jest.config.js
+
+# Ignore heapsnapshot and log files
+*.heapsnapshot
+*.log
+
+# Ignore package locks
 package-lock.json
 
-# Logs
-logs
-*.log*
-*.tsbuildinfo
-coverage/
+# Ignore the GH cli downloaded by workflows
+gh
 
-# IDE Settings
-.idea/
-.vs/
-*.iml
-
-# Generated files
-dist/
+# Ignore the "wiki" folder so we can checkout the wiki inside the same folder
+wiki/

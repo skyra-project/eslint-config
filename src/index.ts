@@ -1,20 +1,20 @@
 export const config = {
-	'env': {
+	env: {
 		es6: true,
 		es2017: true,
 		es2020: true,
 		node: true,
 		jest: true
 	},
-	'extends': 'plugin:@typescript-eslint/recommended',
-	'parser': '@typescript-eslint/parser',
-	'parserOptions': {
+	extends: 'plugin:@typescript-eslint/recommended',
+	parser: '@typescript-eslint/parser',
+	parserOptions: {
 		ecmaVersion: 2020,
 		sourceType: 'module',
 		project: './tsconfig.eslint.json'
 	},
-	'plugins': ['@typescript-eslint'],
-	'rules': {
+	plugins: ['@typescript-eslint'],
+	rules: {
 		'for-direction': 'off',
 		'getter-return': 'off',
 		'no-await-in-loop': 'off',
@@ -61,13 +61,13 @@ export const config = {
 		'array-callback-return': 'error',
 		'block-scoped-var': 'error',
 		'class-methods-use-this': 'off',
-		'complexity': 'off',
+		complexity: 'off',
 		'consistent-return': 'off',
-		'curly': ['error', 'multi-line', 'consistent'],
+		curly: ['error', 'multi-line', 'consistent'],
 		'default-case': 'off',
 		'dot-location': ['error', 'property'],
 		'dot-notation': 'off',
-		'eqeqeq': ['error', 'smart'],
+		eqeqeq: ['error', 'smart'],
 		'guard-for-in': 'warn',
 		'no-alert': 'error',
 		'no-caller': 'error',
@@ -122,12 +122,12 @@ export const config = {
 		'no-warning-comments': 'off',
 		'no-with': 'error',
 		'prefer-promise-reject-errors': 'error',
-		'radix': 'error',
+		radix: 'error',
 		'require-await': 'off',
 		'vars-on-top': 'off',
 		'wrap-iife': ['error', 'inside'],
-		'yoda': 'error',
-		'strict': ['error', 'never'],
+		yoda: 'error',
+		strict: ['error', 'never'],
 		'init-declarations': 'off',
 		'no-catch-shadow': 'error',
 		'no-delete-var': 'error',
@@ -179,7 +179,7 @@ export const config = {
 		'id-blacklist': 'off',
 		'id-length': 'off',
 		'id-match': 'off',
-		'indent': 'off',
+		indent: 'off',
 		'jsx-quotes': ['error', 'prefer-double'],
 		'key-spacing': [
 			'error',
@@ -193,11 +193,7 @@ export const config = {
 		'line-comment-position': 'off',
 		'linebreak-style': ['error', 'unix'],
 		'lines-around-comment': 'off',
-		'lines-between-class-members': [
-			'error',
-			'always',
-			{ exceptAfterSingleLine: true }
-		],
+		'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 		'max-depth': 'off',
 		'max-len': 'off',
 		'max-lines': 'off',
@@ -230,10 +226,7 @@ export const config = {
 		'no-unneeded-ternary': 'off',
 		'no-whitespace-before-property': 'error',
 		'nonblock-statement-body-position': 'off',
-		'object-curly-newline': [
-			'error',
-			{ multiline: true, consistent: true }
-		],
+		'object-curly-newline': ['error', { multiline: true, consistent: true }],
 		'object-curly-spacing': ['error', 'always'],
 		'object-property-newline': 'off',
 		'one-var': ['error', 'never'],
@@ -260,7 +253,7 @@ export const config = {
 				numbers: false
 			}
 		],
-		'quotes': [
+		quotes: [
 			'error',
 			'single',
 			{
@@ -269,7 +262,7 @@ export const config = {
 			}
 		],
 		'require-jsdoc': 'off',
-		'semi': 'off',
+		semi: 'off',
 		'semi-spacing': [
 			'error',
 			{
@@ -367,10 +360,7 @@ export const config = {
 				allowPrivateClassPropertyAccess: true
 			}
 		],
-		'@typescript-eslint/keyword-spacing': [
-			'error',
-			{ before: true, after: true }
-		],
+		'@typescript-eslint/keyword-spacing': ['error', { before: true, after: true }],
 		'@typescript-eslint/init-declarations': 'error',
 		'@typescript-eslint/prefer-reduce-type-parameter': 'error',
 		'@typescript-eslint/class-literal-property-style': 'error',
@@ -379,10 +369,7 @@ export const config = {
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
 		'@typescript-eslint/no-dupe-class-members': 'error',
 		'@typescript-eslint/prefer-as-const': 'error',
-		'@typescript-eslint/comma-spacing': [
-			'error',
-			{ before: false, after: true }
-		],
+		'@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
 		'@typescript-eslint/no-extra-non-null-assertion': 'error',
 		'@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
 		'@typescript-eslint/naming-convention': [
@@ -422,7 +409,7 @@ export const config = {
 		'@typescript-eslint/member-ordering': [
 			'error',
 			{
-				'default': [
+				default: [
 					'signature',
 					'public-instance-field',
 					'protected-instance-field',
@@ -468,10 +455,7 @@ export const config = {
 		'@typescript-eslint/type-annotation-spacing': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
 		'@typescript-eslint/no-explicit-any': 'off',
-		'@typescript-eslint/no-use-before-define': [
-			'error',
-			{ typedefs: false, functions: false }
-		],
+		'@typescript-eslint/no-use-before-define': ['error', { typedefs: false, functions: false }],
 		'@typescript-eslint/member-delimiter-style': [
 			'error',
 			{
@@ -494,7 +478,7 @@ export const config = {
 				'ts-ignore': 'allow-with-description',
 				'ts-nocheck': true,
 				'ts-check': true,
-				'minimumDescriptionLength': 3
+				minimumDescriptionLength: 3
 			}
 		]
 	}
