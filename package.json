@@ -14,7 +14,7 @@
     "prepublishOnly": "yarn lint",
     "commit": "git-cz",
     "cz": "git-cz",
-    "up": "yarn upgrade-interactive --latest",
+    "update": "yarn upgrade-interactive --latest",
     "sversion": "yarn standard-version"
   },
   "peerDependencies": {
