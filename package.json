@@ -12,7 +12,6 @@
 		"prelint": "yarn build",
 		"lint": "eslint --fix --ext ts src/index.ts",
 		"format": "prettier --write src/**/*.ts",
-		"format:check": "prettier --check src/**/*.ts",
 		"prepublishOnly": "yarn lint",
 		"commit": "git-cz",
 		"cz": "git-cz",
