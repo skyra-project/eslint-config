@@ -135,7 +135,7 @@ export const config = {
 		'no-restricted-globals': 'off',
 		'no-shadow': 'off',
 		'no-shadow-restricted-names': 'error',
-		'no-undef': 'error',
+		'no-undef': 'off',
 		'no-undef-init': 'off',
 		'no-undefined': 'off',
 		'no-unused-vars': 'off',
