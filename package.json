@@ -1,7 +1,7 @@
 {
 	"name": "@skyra/eslint-config",
 	"description": "Shareable TypeScript and ESLint configs",
-	"version": "5.3.2",
+	"version": "5.3.3",
 	"author": "@skyra",
 	"license": "MIT",
 	"main": "dist/index.js",
