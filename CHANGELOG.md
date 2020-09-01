@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.3.2](https://github.com/skyra-project/eslint-config/compare/v5.3.1...v5.3.2) (2020-09-01)
+
+### Bug Fixes
+
+-   disable no-undef rule ([2bdc4bb](https://github.com/skyra-project/eslint-config/commit/2bdc4bbb6a941a22e9ef91b522678bb681e1e719))
+
 ### [5.3.1](https://github.com/skyra-project/eslint-config/compare/v5.3.0...v5.3.1) (2020-08-27)
 
 ### Bug Fixes
