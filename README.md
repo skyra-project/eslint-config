@@ -74,7 +74,7 @@ Add the ESLint config to your `package.json`:
 }
 ```
 
-Or to `eslintrc.js` or `eslintrc.json`:
+Or to `eslintrc.js` or `.eslintrc.json`:
 
 ```json
 {
