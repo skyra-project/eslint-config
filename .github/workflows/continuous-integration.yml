@@ -36,7 +36,7 @@ jobs:
               with:
                   build: src
             - name: Upload Build bundle to artifacts
-              uses: actions/upload-artifact@v2-preview
+              uses: actions/upload-artifact@v2
               with:
                   name: build_bundle
                   path: dist/
@@ -90,7 +90,7 @@ jobs:
             - name: Install Dependencies
               run: yarn --ignore-scripts --frozen-lockfile
             - name: Download build bundle artifact
-              uses: actions/download-artifact@v2-preview
+              uses: actions/download-artifact@v2
               with:
                   name: build_bundle
                   path: dist/
